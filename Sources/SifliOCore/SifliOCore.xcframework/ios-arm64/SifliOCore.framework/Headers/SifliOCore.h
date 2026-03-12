@@ -26,7 +26,7 @@ FOUNDATION_EXPORT const unsigned char SifliOCoreVersionString[];
 #import <SifliOCore/SFModuleBase.h>
 #import <SifliOCore/SFBleShell.h>
 #import <SifliOCore/SFTaskBase.h>
-#import <SifliOCore/SFSSZipArchive.h>
+#import <SifliOCore/SFZipHelper.h>
 #import <SifliOCore/SFFolderUtil.h>
 #import <SifliOCore/SFFileUtil.h>
 #import <SifliOCore/SFResult.h>

@@ -14,11 +14,14 @@ NS_ASSUME_NONNULL_BEGIN
 /// 将数据输出为16进制字符串 100字节上限，超过截断.
 /// - Parameter data: 数据
 + (NSString *)hexStringFromData100:(NSData *)data;
++ (NSString *)hexStringFromData:(NSData *)data;
 
 /// 将16进制字符串转为NSData
 /// - Parameter hexStr: 16进制字符串
 + (NSData *)dataFromHexString:(NSString *)hexStr;
 + (NSString *)summary:(NSData *)data;
+
++ (NSData *)parseHexStrToBytes:(NSString *)hexStr;
 
 /// 切割数据
 /// - Parameters:
@@ -29,12 +32,17 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSData *)convertUint16ToUint8Data:(uint16_t)value;
 
 + (uint32_t)covertDataToUnit32:(NSData *)data;
++ (uint32_t)covertDataToUnit32Big:(NSData *)data;
 
 + (uint16_t)covertDataToUnit16:(NSData *)data;
+///将大端序2字节数据转为uint16
++ (uint16_t)covertDataToUnit16Big:(NSData *)data;
 
 + (NSData *)convertUInt8ToData:(uint8_t)value;
 + (NSData *)convertUInt16ToData:(uint16_t)value;
++ (NSData *)convertUInt16ToBigData:(uint16_t)value;
 + (NSData *)convertUInt32ToData:(uint32_t)value;
++ (NSData *)convertUInt32ToBigData:(uint32_t)value;
 
 + (uint8_t)getByteFromData:(NSData *)data index:(NSInteger)index;
 + (uint16_t)getUint16FromData:(NSData *)data index:(NSInteger)index;
@@ -80,6 +88,10 @@ NS_ASSUME_NONNULL_BEGIN
 + (uint32_t)calculateFileBlock:(uint16_t)blockLength fileLength:(uint64_t)fileLength;
 
 + (NSData *)makeDataWithLength:(NSInteger)len byte:(uint8_t)paddingByte;
+
++ (NSData *)revertBytes:(NSData *)data;
+
++ (NSData *)paddingBytesToLenWith0:(NSData *)src len:(NSInteger)len;
 @end
 
 NS_ASSUME_NONNULL_END

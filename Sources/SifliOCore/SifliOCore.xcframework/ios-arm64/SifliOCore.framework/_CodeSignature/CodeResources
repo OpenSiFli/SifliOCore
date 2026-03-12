@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/SFBleCoreManager.h</key>
 		<data>
-		/rVN3irWa3Y62IRPOvF3XmMCXIg=
+		j5vT2VzgSJcPFrfvB8DjUaP5evY=
 		</data>
 		<key>Headers/SFBleCoreManagerState.h</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Headers/SFBleShell.h</key>
 		<data>
-		vPtIDdh3ZfQsc/7pM9JaxkVvuXA=
+		63MQczyj6O142seH5I2T0sCq8Zc=
 		</data>
 		<key>Headers/SFCBPeripheral.h</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Headers/SFCoreError.h</key>
 		<data>
-		nUxG9RSyIpcZ38JOr84A36EbcUc=
+		mJDzEgkI4ZdjZ0lDB7SVJ1hPL5s=
 		</data>
 		<key>Headers/SFCountDownTimer.h</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Headers/SFDataUtil.h</key>
 		<data>
-		IPMRSlk7hw2B6q4erfBa7e2dRWM=
+		V3DSkXnjNq3OhLZKKniZYvOfY5M=
 		</data>
 		<key>Headers/SFDeviceID.h</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Headers/SFFileUtil.h</key>
 		<data>
-		D8KnhHPQGMjwIniC316AIrATiso=
+		nmGe/9vKP8nTk3ptOilR3mY8yb8=
 		</data>
 		<key>Headers/SFFolderUtil.h</key>
 		<data>
@@ -66,15 +66,11 @@
 		</data>
 		<key>Headers/SFResult.h</key>
 		<data>
-		+XMmmRMEI+PiS7jykTsSKJPWl2E=
-		</data>
-		<key>Headers/SFSSZipArchive.h</key>
-		<data>
-		WbssneCzTVP/H9QGBoI703O4+0k=
+		s1/Pir5kAo0UQmmX/3vwZusYEvA=
 		</data>
 		<key>Headers/SFStringUtil.h</key>
 		<data>
-		2K/5rtjG4TzKa5iqf1D5TNC0Mzo=
+		NiQQSO4nMS1JwbRatb5uSbRPA+Y=
 		</data>
 		<key>Headers/SFSysTool.h</key>
 		<data>
@@ -84,17 +80,17 @@
 		<data>
 		UIkrZuDpFj+qsNCK3tQUqXF5EIM=
 		</data>
-		<key>Headers/SSZipCommon.h</key>
+		<key>Headers/SFZipHelper.h</key>
 		<data>
-		RIcb5B+ld+J5JtAl4CxP7ae6qi0=
+		H5OP81pbrjQdigIf3gyFxKS2wBg=
 		</data>
 		<key>Headers/SifliOCore.h</key>
 		<data>
-		Scz/vDp4WxhWD2laytdfIaBok14=
+		H21xUqMqGt/X6LhbAdqd4OZ//YY=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		FiO/pp8r/fhS+iC3L7By/LhMTTs=
+		+Q3eT84TWqeUr+O8gzuCQqEHreo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -118,11 +114,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/rVN3irWa3Y62IRPOvF3XmMCXIg=
+			j5vT2VzgSJcPFrfvB8DjUaP5evY=
 			</data>
 			<key>hash2</key>
 			<data>
-			HD/WG4yduUvdV1PWtTSrG3EGkXXwSNBPZMTnPGzhBuk=
+			z5x2zdfm6oJw73pFg1yHchFmpUZSc+gu8a8rqOVxGJo=
 			</data>
 		</dict>
 		<key>Headers/SFBleCoreManagerState.h</key>
@@ -140,11 +136,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vPtIDdh3ZfQsc/7pM9JaxkVvuXA=
+			63MQczyj6O142seH5I2T0sCq8Zc=
 			</data>
 			<key>hash2</key>
 			<data>
-			BPJ4WAcq9FMYB/xpMnflKdwgwl5Wrr/Ahmz6Dlzttek=
+			QRjitjDmIrBMmB+2d3unMeY37GfcyZSbZ5awi8lAfN8=
 			</data>
 		</dict>
 		<key>Headers/SFCBPeripheral.h</key>
@@ -162,11 +158,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			nUxG9RSyIpcZ38JOr84A36EbcUc=
+			mJDzEgkI4ZdjZ0lDB7SVJ1hPL5s=
 			</data>
 			<key>hash2</key>
 			<data>
-			p+CQoF4bZ492bA+r0ZDeKQxejtOCdGJNawAPq+kt1pA=
+			ufmxXqXpbJRuSQzMwxCH4HY+4LWF4ue5oFI7dP58ZIg=
 			</data>
 		</dict>
 		<key>Headers/SFCountDownTimer.h</key>
@@ -184,11 +180,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			IPMRSlk7hw2B6q4erfBa7e2dRWM=
+			V3DSkXnjNq3OhLZKKniZYvOfY5M=
 			</data>
 			<key>hash2</key>
 			<data>
-			YLmolkzJvs+9/hS6fJJa9UKEL8xJVe3HOaS5NmuwHGI=
+			1X1eUfeGz4yHAr44HAPl2AMRNe1V1BuHj9dqbEZt4ck=
 			</data>
 		</dict>
 		<key>Headers/SFDeviceID.h</key>
@@ -206,11 +202,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			D8KnhHPQGMjwIniC316AIrATiso=
+			nmGe/9vKP8nTk3ptOilR3mY8yb8=
 			</data>
 			<key>hash2</key>
 			<data>
-			kmVpaxvJB6QJhMIhBFlxsbb5Pedu24OtZ3DZ4sJ5dO8=
+			w2CH4/ODKrZtpcRuqpu7yyhmC8uW8UTo6YFAm0v0lCA=
 			</data>
 		</dict>
 		<key>Headers/SFFolderUtil.h</key>
@@ -272,33 +268,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+XMmmRMEI+PiS7jykTsSKJPWl2E=
+			s1/Pir5kAo0UQmmX/3vwZusYEvA=
 			</data>
 			<key>hash2</key>
 			<data>
-			z+pYL/YOjf8cwUJ2Gn3TfXcJsVnxmEG1zl3wspEglaA=
-			</data>
-		</dict>
-		<key>Headers/SFSSZipArchive.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			WbssneCzTVP/H9QGBoI703O4+0k=
-			</data>
-			<key>hash2</key>
-			<data>
-			JplXCYjOna0wdeQUGfKBoXEypl9dAZQHWgzB/u/biss=
+			fBzo7SFBZ9LrGas5Pej+H9NqnsePsN1jbRVjhJTesZ0=
 			</data>
 		</dict>
 		<key>Headers/SFStringUtil.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2K/5rtjG4TzKa5iqf1D5TNC0Mzo=
+			NiQQSO4nMS1JwbRatb5uSbRPA+Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			nEVldv+c8kpLKiR+1wm435pCOrVM/s63VAlX6GdQO+I=
+			OSQpFDhwn6BRh5RiaiNL6F2JHIJ+b8MJaUAbLGx1gZ4=
 			</data>
 		</dict>
 		<key>Headers/SFSysTool.h</key>
@@ -323,26 +308,26 @@
 			PXBsENKlLCgVk+8Msf+jTdfASWs45eJWuaMopYljdr8=
 			</data>
 		</dict>
-		<key>Headers/SSZipCommon.h</key>
+		<key>Headers/SFZipHelper.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			RIcb5B+ld+J5JtAl4CxP7ae6qi0=
+			H5OP81pbrjQdigIf3gyFxKS2wBg=
 			</data>
 			<key>hash2</key>
 			<data>
-			NF/uhH//cPMZJDgLudzWL3Q/SgXGTIkzaL9svHEogVY=
+			JcLWp4I2pTKyNRSkItb+DoBiumgs+NMWJYwLra7sE8M=
 			</data>
 		</dict>
 		<key>Headers/SifliOCore.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Scz/vDp4WxhWD2laytdfIaBok14=
+			H21xUqMqGt/X6LhbAdqd4OZ//YY=
 			</data>
 			<key>hash2</key>
 			<data>
-			eqXk647lbAMVHxSvyOcgI5SdIJKaxc1x03c1F9mJ+cs=
+			osaguopABwqcrKwSruO+Fs0j4ynrIXDvtisY6VCYeLY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

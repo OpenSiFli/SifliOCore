@@ -21,4 +21,12 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithSuccess:(BOOL)success data:(nullable NSData *)data error:(nullable SFCoreError *)error;
 @end
 
+// 泛型子类：携带具体类型的数据
+@interface SFResultT<__covariant ObjectType> : SFResult
+@property (nonatomic, strong, nullable) ObjectType data;
+- (instancetype)initWithSuccess:(BOOL)success
+                           data:(nullable ObjectType)data
+                          error:(nullable SFCoreError *)error;
+@end
+
 NS_ASSUME_NONNULL_END

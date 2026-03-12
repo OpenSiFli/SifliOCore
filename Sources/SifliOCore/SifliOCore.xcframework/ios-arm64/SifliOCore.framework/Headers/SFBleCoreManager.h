@@ -36,6 +36,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,strong,readonly) SFCBPeripheral *currentPeripheral;
 @property (nonatomic,assign,readonly) BOOL isShakedHands;
 @property (nonatomic,assign,readonly) SFBleCoreManagerState state;
+///之前已经协商使用过的mtu.
+@property (nonatomic,assign)NSUInteger lastMtu;
 
 + (SFBleCoreManager *)shared;
 

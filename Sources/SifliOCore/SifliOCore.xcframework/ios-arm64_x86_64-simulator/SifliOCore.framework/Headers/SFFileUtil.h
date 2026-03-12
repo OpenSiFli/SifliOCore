@@ -12,6 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 @interface SFFileUtil : NSObject
 + (BOOL)isFileExist:(NSString *)filePath;
 + (BOOL)isDirectory:(NSString *)filePath;
+///如果目录已经存在，则先移除，再重建
++ (BOOL)reCreateDirAtPath:(NSString *)path;
++ (BOOL)createDirectoryAtPath:(NSString *)path;
 
 /// 枚举一个目录下的所有文件，包含子目录
 /// - Parameter fileDir: 目录

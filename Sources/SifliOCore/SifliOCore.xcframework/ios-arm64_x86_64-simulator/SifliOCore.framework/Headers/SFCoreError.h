@@ -16,7 +16,9 @@ typedef NS_ENUM(NSUInteger, SFCoreErrorType) {
     SFCoreErrorTypeFailedToConnect,
     SFCoreErrorTypeUserStop,
     SFCoreErrorTypeInvalidParameter,
-    SFCoreErrorTypeReadFileError
+    SFCoreErrorTypeReadFileError,
+    SFCoreErrorTypeDeviceCode,
+    SFCoreErrorTypeUnavailableBleStatus
 };
 
 @interface SFCoreError : NSObject
@@ -31,6 +33,10 @@ typedef NS_ENUM(NSUInteger, SFCoreErrorType) {
 
 
 - (instancetype)initWithType:(SFCoreErrorType)type info:(NSString *)info;
+- (instancetype)initWithCode:(NSUInteger)code info:(NSString *)info;
+
++ (SFCoreError *)initWithCode:(NSUInteger)code info:(NSString *)info;
++ (SFCoreError *)initWithDeviceCode:(uint16_t)code;
 
 @end
 NS_ASSUME_NONNULL_END
