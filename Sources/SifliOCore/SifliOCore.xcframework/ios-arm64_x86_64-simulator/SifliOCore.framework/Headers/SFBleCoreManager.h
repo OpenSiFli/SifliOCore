@@ -65,7 +65,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 写入数据
 /// - Parameter value: 数据
-- (void)writeValueForWriteCharateristic:(NSData *)value;
+- (void)writeValueListForWriteCharateristic:(NSArray<NSData *> *)valueList;
 
 - (dispatch_queue_t)bleQueue;
 

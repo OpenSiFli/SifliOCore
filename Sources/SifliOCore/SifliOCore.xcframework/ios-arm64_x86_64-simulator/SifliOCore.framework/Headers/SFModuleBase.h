@@ -10,6 +10,7 @@
 #import <SifliOCore/SFBleCoreManager.h>
 #import <SifliOCore/SFBleCoreManagerState.h>
 #import <SifliOCore/SFOLog.h>
+#import <SifliOCore/SFBleShellStatus.h>
 //#import "SFWatchfaceSDK/SFWatchfaceError.h"
 
 NS_ASSUME_NONNULL_BEGIN
@@ -27,12 +28,13 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,copy,readonly)NSString *name;
 @property (nonatomic,weak) id<SFModuleDelegate> delegate;
 - (instancetype)initWithName:(NSString *)name;
-- (void)bleEventHandler:(SFBleCoreManager *)bleCore onSearchTimeoutWithError:(SFCoreError *)error;
-- (void)bleEventHandler:(SFBleCoreManager *)bleCore onFailToConnect:(SFCoreError *)error;
+- (void)bleEventHandler:(id<SFTransmissionShell>)bleCore onSearchTimeoutWithError:(SFCoreError *)error;
+- (void)bleEventHandler:(id<SFTransmissionShell>)bleCore onFailToConnect:(SFCoreError *)error;
 - (void)bleEventHandlerOnShakedHands;
-- (void)bleEventHandler:(SFBleCoreManager *)bleCore onDisconnected:(SFCoreError *)error;
-- (void)bleEventHandler:(SFBleCoreManager *)bleCore onUpdateState:(SFBleCoreManagerState)state;
-- (void)bleEventHandler:(SFBleCoreManager *)bleCore onReceiveData:(NSData *)data;
+- (void)bleEventHandler:(id<SFTransmissionShell>)bleCore onDisconnected:(SFCoreError *)error;
+- (void)bleEventHandler:(id<SFTransmissionShell>)bleCore onUpdateState:(SFBleCoreManagerState)state;
+- (void)bleEventHandler:(id<SFTransmissionShell>)bleCore onReceiveData:(NSData *)data;
+- (void)bleEventHandler:(id<SFTransmissionShell>)bleCore onSocketWriteDone:(NSString *)tag;
 
 /// 任务结束后，清除缓存，恢复状态
 - (void)clear;

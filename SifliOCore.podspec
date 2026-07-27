@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "SifliOCore"
-  spec.version      = "2.0.1"
+  spec.version      = "2.2.2"
   spec.summary      = "SifliOCore.思澈sdk的核心依赖库"
 
   # This description is used to generate tags and improve search results.

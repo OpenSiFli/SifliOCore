@@ -9,38 +9,25 @@
 #import <SifliOCore/SFCoreError.h>
 #import <SifliOCore/SFBleCoreManagerState.h>
 #import <SifliOCore/SFModuleBase.h>
+#import <SifliOCore/SFBleShellStatus.h>
 
 NS_ASSUME_NONNULL_BEGIN
 ///1.0.9 优化蓝牙工作队列为专有队列
 ///1.0.10 发送流控优化
-///1.0.11 发送间隔时间优化
-///1.0.13 SSZipArchive隐藏在framework内部。
-///1.0.14 订阅特征失败，输出错误信息
-///1.0.15 支持表盘编辑sdk
-///2.0.1 SSZipArchive剥离为外部插件
-static NSString * const kOCoreVersion = @"2.0.1";
-typedef NS_ENUM(NSUInteger, SFBleShellStatus) {
-    //空闲
-    SFBleShellStatusNone = 0,
-    //搜索设备
-    SFBleShellStatusSearching = 1,
-    //连接设备
-    SFBleShellStatusConnecting = 2,
-    //模块工作中
-    SFBleShellStatusModuleWorking = 3
-};
+//static NSString * const kOCoreVersion = @"1.0.10";
 
-@class SFBleShell;
-@protocol SFBleShellDelegate <NSObject>
 
-- (void)bleShell:(SFBleShell *)shell updateBleState:(SFBleCoreManagerState)state;
-- (void)bleShell:(SFBleShell *)shell updateShellState:(SFBleShellStatus)state;
-- (void)bleShell:(SFBleShell *)shell progress:(NSUInteger)completeBytes total:(NSUInteger)totalBytes;
-- (void)bleShell:(SFBleShell *)shell isSuccess:(BOOL)success error:(nullable SFCoreError *)error;
+//@class SFBleShell;
+//@protocol SFBleShellDelegate <NSObject>
+//
+//- (void)bleShell:(SFBleShell *)shell updateBleState:(SFBleCoreManagerState)state;
+//- (void)bleShell:(SFBleShell *)shell updateShellState:(SFBleShellStatus)state;
+//- (void)bleShell:(SFBleShell *)shell progress:(NSUInteger)completeBytes total:(NSUInteger)totalBytes;
+//- (void)bleShell:(SFBleShell *)shell isSuccess:(BOOL)success error:(nullable SFCoreError *)error;
+//
+//@end
 
-@end
-
-@interface SFBleShell : NSObject<SFModuleDelegate>
+@interface SFBleShell : NSObject<SFTransmissionShell,SFModuleDelegate>
 @property (nonatomic,weak) id<SFBleShellDelegate> delegate;
 @property (nonatomic,assign,readonly) BOOL isBusy;
 @property (nonatomic,assign,readonly)SFBleShellStatus status;
@@ -55,7 +42,6 @@ typedef NS_ENUM(NSUInteger, SFBleShellStatus) {
 - (SFBleCoreManagerState)bleCoreState;
 ///设置blecore的委托到自身，避免多模块工作冲突。
 - (void)updateBleCoreDelegateToSelf;
-
 
 @end
 

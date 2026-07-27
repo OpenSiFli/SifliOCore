@@ -22,9 +22,13 @@ FOUNDATION_EXPORT const unsigned char SifliOCoreVersionString[];
 #import <SifliOCore/SFOLogManager.h>
 #import <SifliOCore/SFOSerialTransportPack.h>
 #import <SifliOCore/SFDataUtil.h>
+#import <SifliOCore/SFCRCUtil.h>
 #import <SifliOCore/SFCountDownTimer.h>
 #import <SifliOCore/SFModuleBase.h>
 #import <SifliOCore/SFBleShell.h>
+#import <SifliOCore/SFSocketShell.h>
+#import <SifliOCore/SFSocketClientShell.h>
+#import <SifliOCore/SFBleShellStatus.h>
 #import <SifliOCore/SFTaskBase.h>
 #import <SifliOCore/SFZipHelper.h>
 #import <SifliOCore/SFFolderUtil.h>
@@ -33,4 +37,7 @@ FOUNDATION_EXPORT const unsigned char SifliOCoreVersionString[];
 #import <SifliOCore/SFStringUtil.h>
 #import <SifliOCore/SFSysTool.h>
 #import <SifliOCore/FPSCounter.h>
+#import <SifliOCore/SifliImageHelper.h>
+#import <SifliOCore/SifliVideoYuvFrame.h>
+#import <SifliOCore/ManufacturerDataHelper.h>
 //#import <SifliOCore/NSData+Sumary.h>
